@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a41c9294-b9ad-475e-ae21-4816ec322a16" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/bean/AuthenticationBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/bean/Greeting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/config/SpringSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/controller/BasicAuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/controller/GreetingController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/backend.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end-stage/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-stage/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end-stage/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-stage/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end-stage/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-stage/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end-stage/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-stage/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end-stage/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-stage/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end-stage/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-stage/src/app/app.module.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -286,7 +284,7 @@
       <workItem from="1598027338240" duration="4047000" />
       <workItem from="1598038081991" duration="607000" />
       <workItem from="1598038848490" duration="10127000" />
-      <workItem from="1598055925503" duration="1152000" />
+      <workItem from="1598055925503" duration="1734000" />
     </task>
     <task id="LOCAL-00001" summary="adding dependencies">
       <created>1598027871035</created>
@@ -302,11 +300,18 @@
       <option name="project" value="LOCAL" />
       <updated>1598040108265</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="security spring boot backend">
+      <created>1598057234249</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1598057234249</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15961000" />
+    <option name="totallyTimeSpent" value="16543000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
