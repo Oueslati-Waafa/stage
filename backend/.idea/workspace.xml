@@ -286,7 +286,7 @@
       <workItem from="1598027338240" duration="4047000" />
       <workItem from="1598038081991" duration="607000" />
       <workItem from="1598038848490" duration="10127000" />
-      <workItem from="1598055925503" duration="847000" />
+      <workItem from="1598055925503" duration="1152000" />
     </task>
     <task id="LOCAL-00001" summary="adding dependencies">
       <created>1598027871035</created>
@@ -306,7 +306,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15656000" />
+    <option name="totallyTimeSpent" value="15961000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -352,7 +352,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adding dependencies" />
     <MESSAGE value="adding spring boot security" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding spring boot security" />
+    <MESSAGE value="security spring boot backend" />
+    <option name="LAST_COMMIT_MESSAGE" value="security spring boot backend" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/mvnw">
