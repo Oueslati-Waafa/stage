@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a41c9294-b9ad-475e-ae21-4816ec322a16" name="Default Changelist" comment="Rodes definition">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/HomeRessource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/configuration/SecurityConfiguration.java" afterDir="false" />
+    <list default="true" id="a41c9294-b9ad-475e-ae21-4816ec322a16" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/Repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/SpringSecurityJpaApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/models/MyUserDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/models/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/services/MyUserDetailsService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/bean/AuthenticationBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/bean/Greeting.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/config/SpringSecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/controller/BasicAuthController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/controller/GreetingController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/backend.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/HomeRessource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/HomeRessource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/configuration/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/configuration/SecurityConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/menu/menu.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/menu/menu.component.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,23 +28,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/stage/backend/stage/HomeRessource.java">
           <provider selected="true" editor-type-id="text-editor">
             <state>
+              <caret column="22" selection-start-column="22" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/stage/backend/stage/Repository/UserRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -52,22 +49,75 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/stage/backend/stage/StageApplication.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/stage/backend/stage/models/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+            <state relative-caret-position="289">
+              <caret line="48" column="32" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="32" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#374#375#0" expanded="true" />
+                <element signature="e#399#400#0" expanded="true" />
+                <element signature="e#462#463#0" expanded="true" />
+                <element signature="e#491#492#0" expanded="true" />
+                <element signature="e#536#537#0" expanded="true" />
+                <element signature="e#572#573#0" expanded="true" />
+                <element signature="e#432#433#0" expanded="true" />
+                <element signature="e#460#461#0" expanded="true" />
+                <element signature="e#495#496#0" expanded="true" />
+                <element signature="e#526#527#0" expanded="true" />
+                <element signature="e#574#575#0" expanded="true" />
+                <element signature="e#614#615#0" expanded="true" />
+                <element signature="e#649#650#0" expanded="true" />
+                <element signature="e#680#681#0" expanded="true" />
+                <element signature="e#728#729#0" expanded="true" />
+                <element signature="e#768#769#0" expanded="true" />
+                <element signature="e#804#805#0" expanded="true" />
+                <element signature="e#836#837#0" expanded="true" />
+                <element signature="e#886#887#0" expanded="true" />
+                <element signature="e#928#929#0" expanded="true" />
+                <element signature="e#963#964#0" expanded="true" />
+                <element signature="e#994#995#0" expanded="true" />
+                <element signature="e#1042#1043#0" expanded="true" />
+                <element signature="e#1082#1083#0" expanded="true" />
+                <element signature="e#1113#1114#0" expanded="true" />
+                <element signature="e#1140#1141#0" expanded="true" />
+                <element signature="e#1180#1181#0" expanded="true" />
+                <element signature="e#1212#1213#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/stage/backend/stage/configuration/SecurityConfiguration.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/stage/backend/stage/models/MyUserDetails.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="38" column="60" selection-start-line="38" selection-start-column="60" selection-end-line="38" selection-end-column="60" />
+            <state relative-caret-position="173">
+              <caret line="38" column="2" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="2" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1146#1147#0" expanded="true" />
+                <element signature="e#1173#1174#0" expanded="true" />
+                <element signature="e#1222#1223#0" expanded="true" />
+                <element signature="e#1249#1250#0" expanded="true" />
+                <element signature="e#1298#1299#0" expanded="true" />
+                <element signature="e#1325#1326#0" expanded="true" />
+                <element signature="e#1383#1384#0" expanded="true" />
+                <element signature="e#1411#1412#0" expanded="true" />
+                <element signature="e#1468#1469#0" expanded="true" />
+                <element signature="e#1496#1497#0" expanded="true" />
+                <element signature="e#1558#1559#0" expanded="true" />
+                <element signature="e#1586#1587#0" expanded="true" />
+                <element signature="e#1634#1635#0" expanded="true" />
+                <element signature="e#1662#1663#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/stage/backend/stage/SpringSecurityJpaApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -107,13 +157,20 @@
         <option value="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/controller/BasicAuthController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/config/SecurityAutoConfiguration.java" />
         <option value="$APPLICATION_CONFIG_DIR$/idea64.exe.vmoptions" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/config/SpringSecurityConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/bean/AuthenticationBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/SecurityConfiguration.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/HomeRessource.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/configuration/SecurityConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/services/UserDetailsService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/MyUserDetails.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/Repository/UserRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/services/MyUserDetailsService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/models/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/models/MyUserDetails.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/SpringSecurityJpaApplication.java" />
       </list>
     </option>
   </component>
@@ -124,10 +181,10 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="951" />
-    <option name="width" value="978" />
-    <option name="height" value="1039" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="952" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -135,6 +192,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -172,6 +230,49 @@
               <item name="stage" type="b2602c69:ProjectViewProjectNode" />
               <item name="backend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="stage" type="462c0819:PsiDirectoryNode" />
+              <item name="configuration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="stage" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="stage" type="462c0819:PsiDirectoryNode" />
+              <item name="Repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="stage" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -193,7 +294,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -251,7 +351,9 @@
       <workItem from="1598038081991" duration="607000" />
       <workItem from="1598038848490" duration="10127000" />
       <workItem from="1598055925503" duration="8473000" />
-      <workItem from="1598114938234" duration="6121000" />
+      <workItem from="1598114938234" duration="10777000" />
+      <workItem from="1598191768227" duration="2260000" />
+      <workItem from="1598202161872" duration="7149000" />
     </task>
     <task id="LOCAL-00001" summary="adding dependencies">
       <created>1598027871035</created>
@@ -274,16 +376,58 @@
       <option name="project" value="LOCAL" />
       <updated>1598057234249</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Rodes definition">
+      <created>1598124002125</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1598124002125</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29403000" />
+    <option name="totallyTimeSpent" value="43468000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="762" y="0" width="781" height="830" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3147651" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.51317614" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.56726766" visible="true" weight="0.15186246" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4986577" weight="0.39943343" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.4327323" side_tool="true" visible="true" weight="0.15186246" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.4919463" weight="0.3243626" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3147651" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -305,7 +449,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info active="true" anchor="bottom" id="Messages" order="14" sideWeight="0.4919463" visible="true" weight="0.3243626" />
+      <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.4919463" visible="true" weight="0.3243626" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -315,7 +459,7 @@
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -354,12 +498,27 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/stage/backend/stage/config/SpringSecurityConfig.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/stage/backend/stage/controller/BasicAuthController.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/stage/backend/stage/bean/AuthenticationBean.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/stage/backend/stage/HomeRessource.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="935">
+          <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/stage/backend/stage/configuration/SecurityConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/stage/backend/stage/services/MyUserDetailsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -376,20 +535,101 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/stage/backend/stage/configuration/SecurityConfiguration.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/stage/backend/stage/HomeRessource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="38" column="60" selection-start-line="38" selection-start-column="60" selection-end-line="38" selection-end-column="60" />
+        <state relative-caret-position="544">
+          <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/stage/backend/stage/models/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="289">
+          <caret line="48" column="32" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="32" />
+          <folding>
+            <element signature="e#374#375#0" expanded="true" />
+            <element signature="e#399#400#0" expanded="true" />
+            <element signature="e#462#463#0" expanded="true" />
+            <element signature="e#491#492#0" expanded="true" />
+            <element signature="e#536#537#0" expanded="true" />
+            <element signature="e#572#573#0" expanded="true" />
+            <element signature="e#432#433#0" expanded="true" />
+            <element signature="e#460#461#0" expanded="true" />
+            <element signature="e#495#496#0" expanded="true" />
+            <element signature="e#526#527#0" expanded="true" />
+            <element signature="e#574#575#0" expanded="true" />
+            <element signature="e#614#615#0" expanded="true" />
+            <element signature="e#649#650#0" expanded="true" />
+            <element signature="e#680#681#0" expanded="true" />
+            <element signature="e#728#729#0" expanded="true" />
+            <element signature="e#768#769#0" expanded="true" />
+            <element signature="e#804#805#0" expanded="true" />
+            <element signature="e#836#837#0" expanded="true" />
+            <element signature="e#886#887#0" expanded="true" />
+            <element signature="e#928#929#0" expanded="true" />
+            <element signature="e#963#964#0" expanded="true" />
+            <element signature="e#994#995#0" expanded="true" />
+            <element signature="e#1042#1043#0" expanded="true" />
+            <element signature="e#1082#1083#0" expanded="true" />
+            <element signature="e#1113#1114#0" expanded="true" />
+            <element signature="e#1140#1141#0" expanded="true" />
+            <element signature="e#1180#1181#0" expanded="true" />
+            <element signature="e#1212#1213#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/stage/backend/stage/Repository/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/stage/backend/stage/SpringSecurityJpaApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/stage/backend/stage/models/MyUserDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="38" column="2" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1146#1147#0" expanded="true" />
+            <element signature="e#1173#1174#0" expanded="true" />
+            <element signature="e#1222#1223#0" expanded="true" />
+            <element signature="e#1249#1250#0" expanded="true" />
+            <element signature="e#1298#1299#0" expanded="true" />
+            <element signature="e#1325#1326#0" expanded="true" />
+            <element signature="e#1383#1384#0" expanded="true" />
+            <element signature="e#1411#1412#0" expanded="true" />
+            <element signature="e#1468#1469#0" expanded="true" />
+            <element signature="e#1496#1497#0" expanded="true" />
+            <element signature="e#1558#1559#0" expanded="true" />
+            <element signature="e#1586#1587#0" expanded="true" />
+            <element signature="e#1634#1635#0" expanded="true" />
+            <element signature="e#1662#1663#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22" selection-start-column="22" selection-end-column="22" />
         </state>
       </provider>
     </entry>

@@ -27,4 +27,11 @@ public class HomeRessource {
         return  msg;
     }
 
+    @GetMapping("/")
+    public String home()
+    {
+        String msg="<h1>Hello World</h1>";
+        return  msg;
+    }
+
 }
