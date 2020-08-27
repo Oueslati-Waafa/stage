@@ -1,6 +1,8 @@
 package com.stage.backend.stage.models;
 
-public class AuthenticationResponse {
+import java.io.Serializable;
+
+public class AuthenticationResponse implements Serializable {
 
     private final String jwt;
 

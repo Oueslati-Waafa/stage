@@ -1,17 +1,12 @@
 package com.stage.backend.stage.models;
 
-public class AuthenticationRequest {
+import java.io.Serializable;
+
+public class AuthenticationRequest implements Serializable {
+
+
     private String username;
     private String password;
-
-    public AuthenticationRequest() {
-
-    }
-
-    public AuthenticationRequest(String username, String password) {
-        this.username = username;
-        this.password = password;
-    }
 
     public String getUsername() {
         return username;
@@ -27,5 +22,16 @@ public class AuthenticationRequest {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+
+    public AuthenticationRequest()
+    {
+
+    }
+
+    public AuthenticationRequest(String username, String password) {
+        this.setUsername(username);
+        this.setPassword(password);
     }
 }

@@ -21,6 +21,7 @@ public class HomeRessource {
     private AuthenticationManager authenticationManager;
     @Autowired
     private MyUserDetailsService userDetailsService;
+    @Autowired
     private JwtUtil jwtTokenUtil;
 
     @RequestMapping("/hello")
