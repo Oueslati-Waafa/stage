@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
+// C'est un spring service
 @Service
 public class MyUserDetailsService implements UserDetailsService {
     @Autowired

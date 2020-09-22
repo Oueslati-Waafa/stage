@@ -22,6 +22,8 @@ public class User {
     }
 
     public Boolean getActive() {
+
+
         return active;
     }
 
