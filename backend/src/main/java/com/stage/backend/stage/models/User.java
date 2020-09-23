@@ -1,8 +1,14 @@
 package com.stage.backend.stage.models;
 
 
-import javax.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+import javax.persistence.*;
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @Table(name = "user")
 public class User {
@@ -12,9 +18,19 @@ public class User {
     private int id ;
     private  String userName;
     private  String password;
+    private  String email;
     private  String firstName;
     private  String lastName;
     private  String role;
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     private  Boolean active;
 
     public int getId() {

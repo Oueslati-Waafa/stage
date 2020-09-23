@@ -14,37 +14,37 @@ public class StageController {
     private StageService service;
 
     @PostMapping("/stage/addStage")
-    public Stage addProduct(@RequestBody Stage stage) {
+    public Stage addStage(@RequestBody Stage stage) {
         return service.saveStage(stage);
     }
 
     @PostMapping("/stage/addStages")
-    public List<Stage> addProducts(@RequestBody List<Stage> products) {
+    public List<Stage> addStages(@RequestBody List<Stage> products) {
         return service.saveStages(products);
     }
 
     @GetMapping("/stage/Stages")
-    public List<Stage> findAllProducts() {
+    public List<Stage> findAllStages() {
         return service.getStages();
     }
 
     @GetMapping("/stage/stageById/{id}")
-    public Stage findProductById(@PathVariable int id) {
+    public Stage findStageById(@PathVariable int id) {
         return service.getStageById(id);
     }
 
     @GetMapping("/stage/stage/{name}")
-    public Stage findProductByName(@PathVariable String name) {
+    public Stage findStageByName(@PathVariable String name) {
         return service.getStageByName(name);
     }
 
     @PutMapping("/stage/update")
-    public Stage updateProduct(@RequestBody Stage stage) {
+    public Stage updateStage(@RequestBody Stage stage) {
         return service.updateStage(stage);
     }
 
     @DeleteMapping("/stage/delete/{id}")
-    public String deleteProduct(@PathVariable int id) {
+    public String deleteStage(@PathVariable int id) {
         return service.deleteStage(id);
     }
 }
