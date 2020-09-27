@@ -13,12 +13,12 @@ public class StageService {
     @Autowired
     private StageRepository repository;
 
-    public Stage saveStage(Stage product) {
-        return repository.save(product);
+    public Stage saveStage(Stage stage) {
+        return repository.save(stage);
     }
 
-    public List<Stage> saveStages(List<Stage> products) {
-        return repository.saveAll(products);
+    public List<Stage> saveStages(List<Stage> stages) {
+        return repository.saveAll(stages);
     }
 
     public List<Stage> getStages() {

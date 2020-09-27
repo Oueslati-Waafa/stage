@@ -19,8 +19,8 @@ public class StageController {
     }
 
     @PostMapping("/stage/addStages")
-    public List<Stage> addStages(@RequestBody List<Stage> products) {
-        return service.saveStages(products);
+    public List<Stage> addStages(@RequestBody List<Stage> stages) {
+        return service.saveStages(stages);
     }
 
     @GetMapping("/stage/Stages")
@@ -47,4 +47,6 @@ public class StageController {
     public String deleteStage(@PathVariable int id) {
         return service.deleteStage(id);
     }
+
+
 }

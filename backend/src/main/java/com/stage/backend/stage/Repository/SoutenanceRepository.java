@@ -1,4 +1,8 @@
 package com.stage.backend.stage.Repository;
 
-public interface SoutenanceRepository {
+import com.stage.backend.stage.entity.Soutenance;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface SoutenanceRepository extends JpaRepository<Soutenance,Integer> {
+
 }
