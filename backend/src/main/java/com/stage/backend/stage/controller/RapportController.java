@@ -25,7 +25,7 @@ public class RapportController {
     }
 
     @GetMapping("/rapport/rapportById/{id}")
-    public Rapport findStageById(@PathVariable int id) {
+    public Rapport findRapportById(@PathVariable int id) {
         return rapportService.getRapportById(id);
     }
 

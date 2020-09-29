@@ -10,31 +10,31 @@ import java.util.List;
 public class RapportService {
 
     @Autowired
-    private RapportRepository repository;
+    private RapportRepository rapportRepository;
 
     public Rapport saveRapport(Rapport rapport) {
-        return repository.save(rapport);
+        return rapportRepository.save(rapport);
     }
 
 
 
     public List<Rapport> getRapports() {
-        return repository.findAll();
+        return rapportRepository.findAll();
     }
 
     public Rapport getRapportById(int id) {
-        return repository.findById(id).orElse(null);
+        return rapportRepository.findById(id).orElse(null);
     }
 
 
     public String deleteRapport(int id) {
-        repository.deleteById(id);
+        rapportRepository.deleteById(id);
         return "Rapport removed !! " + id;
     }
 
     public Rapport updateRapport(Rapport rapport) {
-        Rapport existingRapport = repository.findById(rapport.getId()).orElse(null);
+        Rapport existingRapport = rapportRepository.findById(rapport.getId()).orElse(null);
         existingRapport.setEtat(rapport.getEtat());
-        return repository.save(existingRapport);
+        return rapportRepository.save(existingRapport);
     }
 }

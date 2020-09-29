@@ -25,7 +25,7 @@ public class HomeRessource {
     private JwtUtil jwtTokenUtil;
 
 
-    @RequestMapping( "/hello" )
+    @RequestMapping( "/home" )
     public  String hello()
 
     {
