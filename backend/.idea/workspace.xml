@@ -2,56 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a41c9294-b9ad-475e-ae21-4816ec322a16" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/SpringBootJwtAuthenticationApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/controller/AuthRestAPIs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/controller/TestRestAPIs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/messages/request/SignUpForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/messages/response/JwtResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/messages/response/ResponseMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/model/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/model/RoleName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/repository/RoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/security/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/security/jwt/JwtAuthEntryPoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/security/jwt/JwtAuthTokenFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/security/jwt/JwtProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/security/service/UserDetailsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/security/service/UserPrinciple.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/backend.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/HomeRessource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/Repository/EntrepriseRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/Repository/RapportRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/Repository/SoutenanceRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/Repository/StageRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/Repository/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/SpringSecurityJpaApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/SpringSecurityJwtApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/StageApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/configuration/SecurityConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/controller/EntrepriseController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/controller/RapportController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/controller/SoutenanceController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/controller/StageController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/entity/Entreprise.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/entity/Rapport.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/entity/Soutenance.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/entity/Stage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/filters/JwtRequestFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/models/AuthenticationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/messages/request/LoginForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/models/AuthenticationResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/models/MyUserDetails.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/models/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/services/EntrepriseService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/services/MyUserDetailsService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/services/RapportService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/services/SoutenanceService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/services/StageService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/util/JwtUtil.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -235,7 +186,8 @@
       <workItem from="1601455665629" duration="99000" />
       <workItem from="1601455827654" duration="6157000" />
       <workItem from="1601462063929" duration="1456000" />
-      <workItem from="1601463560129" duration="3068000" />
+      <workItem from="1601463560129" duration="4253000" />
+      <workItem from="1601470469447" duration="1344000" />
     </task>
     <task id="LOCAL-00001" summary="adding dependencies">
       <created>1598027871035</created>
@@ -314,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601387851614</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add roles and fixing bugs">
+      <created>1601466869312</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1601466869312</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -332,7 +291,8 @@
     <MESSAGE value="CRUD pour stage" />
     <MESSAGE value="CRUD pour user" />
     <MESSAGE value="fixing attrib in rapport tbl" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing attrib in rapport tbl" />
+    <MESSAGE value="add roles and fixing bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="add roles and fixing bugs" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="70" key="#Assign_Data_Sources" timestamp="1601458245068">
@@ -359,46 +319,46 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1600948634904" />
-    <state x="135" y="6" key="CommitChangelistDialog2" timestamp="1601466839590">
+    <state x="135" y="6" key="CommitChangelistDialog2" timestamp="1601466867473">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="135" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1601466839590" />
+    <state x="135" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1601466867473" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1601464590724">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601464590724" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1601466839687">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1601470566519">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601466839687" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1601466839687">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601470566519" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1601470566519">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601466839687" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1601466839687">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601470566519" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1601470566518">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601466839687" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1601466839687">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601470566518" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1601470566519">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601466839687" />
-    <state width="1493" height="210" key="GridCell.Tab.1.bottom" timestamp="1601466839687">
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601470566519" />
+    <state width="1493" height="210" key="GridCell.Tab.1.bottom" timestamp="1601470566519">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601466839687" />
-    <state width="1493" height="210" key="GridCell.Tab.1.center" timestamp="1601466839687">
+    <state width="1493" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601470566519" />
+    <state width="1493" height="210" key="GridCell.Tab.1.center" timestamp="1601470566519">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1601466839687" />
-    <state width="1493" height="210" key="GridCell.Tab.1.left" timestamp="1601466839687">
+    <state width="1493" height="210" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1601470566519" />
+    <state width="1493" height="210" key="GridCell.Tab.1.left" timestamp="1601470566519">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1601466839687" />
-    <state width="1493" height="210" key="GridCell.Tab.1.right" timestamp="1601466839687">
+    <state width="1493" height="210" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1601470566519" />
+    <state width="1493" height="210" key="GridCell.Tab.1.right" timestamp="1601470566519">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1601466839687" />
+    <state width="1493" height="210" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1601470566519" />
     <state width="1234" height="267" key="GridCell.Tab.2.bottom" timestamp="1601464200644">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -427,10 +387,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="117" width="981" height="707" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1600537927846" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1601387859519">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1601466908121">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1601387859519" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1601466908121" />
     <state x="470" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1601394299837">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
