@@ -2,8 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a41c9294-b9ad-475e-ae21-4816ec322a16" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/controller/EntrepriseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/controller/RapportController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/controller/SoutenanceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/controller/StageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/model/Entreprise.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/model/Rapport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/model/Soutenance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/model/Stage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/repository/EntrepriseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/repository/RapportRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/repository/SoutenanceRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/repository/StageRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/security/service/EntrepriseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/security/service/RapportService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/security/service/SoutenanceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/security/service/StageService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/login/login.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,13 +97,16 @@
     </option>
   </component>
   <component name="ProjectId" id="1hdTnpYVGSxBnNX1S5ywN3M3sfB" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -96,7 +116,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Bureau/SpringBootJwtAuthentication" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/stage/backend/stage/security/service" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -107,6 +127,9 @@
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.stage.backend.stage" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\wafao\OneDrive\Documents\GitHub\stage\backend\src\main\java\com\stage\backend\stage\security\service" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\wafao\OneDrive\Documents\GitHub\stage\backend\src\main\java\com\stage\backend\stage" />
@@ -187,7 +210,7 @@
       <workItem from="1601455827654" duration="6157000" />
       <workItem from="1601462063929" duration="1456000" />
       <workItem from="1601463560129" duration="4253000" />
-      <workItem from="1601470469447" duration="1344000" />
+      <workItem from="1601470469447" duration="2930000" />
     </task>
     <task id="LOCAL-00001" summary="adding dependencies">
       <created>1598027871035</created>
@@ -280,6 +303,7 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="adding dependencies" />
     <MESSAGE value="adding spring boot security" />
     <MESSAGE value="security spring boot backend" />
@@ -327,38 +351,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601464590724" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1601470566519">
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1601478803042">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601470566519" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1601470566519">
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601478803042" />
+    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1601478803041">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601470566519" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1601470566518">
+    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601478803041" />
+    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1601478803041">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601470566518" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1601470566519">
+    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601478803041" />
+    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1601478803042">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601470566519" />
-    <state width="1493" height="210" key="GridCell.Tab.1.bottom" timestamp="1601470566519">
+    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601478803042" />
+    <state width="1493" height="210" key="GridCell.Tab.1.bottom" timestamp="1601478304273">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601470566519" />
-    <state width="1493" height="210" key="GridCell.Tab.1.center" timestamp="1601470566519">
+    <state width="1493" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601478304273" />
+    <state width="1493" height="210" key="GridCell.Tab.1.center" timestamp="1601478304273">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1601470566519" />
-    <state width="1493" height="210" key="GridCell.Tab.1.left" timestamp="1601470566519">
+    <state width="1493" height="210" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1601478304273" />
+    <state width="1493" height="210" key="GridCell.Tab.1.left" timestamp="1601478304273">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1601470566519" />
-    <state width="1493" height="210" key="GridCell.Tab.1.right" timestamp="1601470566519">
+    <state width="1493" height="210" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1601478304273" />
+    <state width="1493" height="210" key="GridCell.Tab.1.right" timestamp="1601478304273">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1601470566519" />
+    <state width="1493" height="210" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1601478304273" />
     <state width="1234" height="267" key="GridCell.Tab.2.bottom" timestamp="1601464200644">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
