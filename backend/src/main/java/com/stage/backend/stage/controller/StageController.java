@@ -51,7 +51,7 @@ public class StageController {
     }
 
     @DeleteMapping("/stage/delete/{id}")
-    @PreAuthorize("hasRole('ADMIN') or")
+    @PreAuthorize("hasRole('ADMIN')")
     public String deleteStage(@PathVariable int id) {
         return service.deleteStage(id);
     }

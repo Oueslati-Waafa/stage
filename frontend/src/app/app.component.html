@@ -5,13 +5,13 @@
     </div>
     <ul class="nav navbar-nav" routerLinkActive="active">
       <li class="nav-item"><a class="nav-link" routerLink="home">Home</a></li>
-      <li *ngIf="authority === 'student'" class="nav-item">
+      <li *ngIf="authority === 'student' || authority === 'admin' || authority === 'teacher'" class="nav-item">
         <a class="nav-link" routerLink="student">Student Board</a>
       </li>
       <li *ngIf="authority === 'admin'" class="nav-item">
         <a class="nav-link" routerLink="admin">Admin Board</a>
       </li>
-      <li *ngIf="authority === 'teacher'" class="nav-item">
+      <li *ngIf="authority === 'teacher' || authority === 'admin'" class="nav-item">
         <a class="nav-link" routerLink="teacher">Teacher Board</a>
       </li>
       <li *ngIf="!authority" class="nav-item">
