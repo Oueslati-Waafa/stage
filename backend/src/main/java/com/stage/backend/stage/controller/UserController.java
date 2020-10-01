@@ -11,7 +11,7 @@ import java.util.Optional;
 
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
-public class TestRestAPIs {
+public class UserController {
     @Autowired
     UserDetailsServiceImpl service;
 
@@ -34,5 +34,41 @@ public class TestRestAPIs {
         return ">>> Admin Contents";
     }
 
+    @PostMapping("/api/admin/adduser")
+    @PreAuthorize("hasRole('ADMIN')")
+    public User addUser(@RequestBody User user) {
+        return service.saveUser(user);
+    }
+
+
+    @GetMapping("api/admin/users")
+    @PreAuthorize("hasRole('ADMIN') or hasRole('TEACHER')")
+    public List<User> findAllUsers() {
+        return service.getUser();
+    }
+
+    @GetMapping("/api/admin/user/{id}")
+    @PreAuthorize("hasRole('ADMIN') or hasRole('TEACHER')")
+    public User findUserById(@PathVariable int id) {
+        return service.getUserById(id);
+    }
+
+    @GetMapping("/api/admin/{name}")
+    @PreAuthorize("hasRole('ADMIN') or hasRole('TEACHER')")
+    public Optional<User> findUserByName(@PathVariable String name) {
+        return service.getUserByName(name);
+    }
+
+    @PutMapping("/api/admin/update")
+    @PreAuthorize("hasRole('ADMIN')")
+    public User updateUser(@RequestBody User user) {
+        return service.updateUser(user);
+    }
+
+    @DeleteMapping("/api/admin/delete/{id}")
+    @PreAuthorize("hasRole('ADMIN')")
+    public String deleteUser(@PathVariable int id) {
+        return service.deleteUser(id);
+    }
 
 }

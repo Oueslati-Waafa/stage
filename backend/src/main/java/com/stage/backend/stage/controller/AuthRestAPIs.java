@@ -73,7 +73,7 @@ public class AuthRestAPIs {
                     HttpStatus.BAD_REQUEST);
         }
 
-        // Creating user's account
+        // Creating user's account for student
         User user = new User(signUpRequest.getName(), signUpRequest.getUsername(), signUpRequest.getEmail(),
                 encoder.encode(signUpRequest.getPassword()));
 
@@ -106,4 +106,6 @@ public class AuthRestAPIs {
 
         return new ResponseEntity<>(new ResponseMessage("User registered successfully!"), HttpStatus.OK);
     }
+
+
 }
