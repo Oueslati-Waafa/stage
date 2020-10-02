@@ -7,9 +7,14 @@ import { Observable } from 'rxjs';
 })
 export class UserService {
 
-  private studentUrl = 'http://localhost:8080/api/student';
-  private teacherUrl = 'http://localhost:8080/api/teacher';
-  private adminUrl = 'http://localhost:8080/api/admin';
+  private studentUrl = 'http://localhost:9920/api/student';
+  private teacherUrl = 'http://localhost:9920/api/teacher';
+  private adminUrl = 'http://localhost:9920/api/admin';
+  private usersUrl = 'http://localhost:9920/api/admin/users';
+  private userDeleteUrl = 'http://localhost:9920/api/admin/delete';
+  private userDetailUrl = 'http://localhost:9920/api/admin/user';
+ 
+  
 
   constructor(private http: HttpClient) { }
 
@@ -24,4 +29,15 @@ export class UserService {
   getAdminBoard(): Observable<string> {
     return this.http.get(this.adminUrl, { responseType: 'text' });
   }
+
+  getUsers(): Observable<any> {
+    return this.http.get(`${this.usersUrl}`);
+  }
+  getUserDetails (id: number): Observable<any> {
+    return this.http.get(`${this.usersUrl}/${id}`);
+  }
+  deleteUser(id: number): Observable<any> {
+    return this.http.delete(`${this.userDeleteUrl}/${id}`, { responseType: 'text' });
+  }
+
 }

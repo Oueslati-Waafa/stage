@@ -1,14 +1,40 @@
 <div *ngIf="info.token; else loggedOut">
-  <h5 class="text-primary">Your Information</h5>
-  <p>
-    <strong>Username:</strong> {{info.username}}<br/>
-    <strong>name:</strong> {{info.name}}<br/>
-    <strong>Roles:</strong> {{info.authorities}}<br />
-    <strong>Token:</strong> {{info.token}}.
-  </p>
-  <button class="btn btn-secondary" (click)="logout()">Logout</button>
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="well well-sm">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <img src="http://placehold.it/380x500" alt="" class="img-rounded img-responsive" />
+                    </div>
+                    <div class="col-sm-6 col-md-8" >
+                     
+                        <h4 class="text-primary">
+                           Your informations</h4>
+                        <small><cite title="TEKUP, Ariana">TEKUP, Ariana <i class="glyphicon glyphicon-education">
+                        </i></cite></small>
+                        
+                            <i class="glyphicon glyphicon-user"></i><strong>username:</strong> {{info.username}}<br/>
+                            <i class="glyphicon glyphicon-lock"></i><strong>Roles:</strong> {{info.authorities}}<br/><br/><br/>
+                            <button style="margin:5px;"  class="btn btn-primary" (click)="logout()">Logout</button> 
+                            <button class="btn btn-success"  routerLink="/users" style="margin:5px;">Users List</button>
+                            
+                      
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
 </div>
 
+
+<br/>
+
+
+
+<router-outlet></router-outlet>
 <ng-template #loggedOut>
   Please login.
 </ng-template>

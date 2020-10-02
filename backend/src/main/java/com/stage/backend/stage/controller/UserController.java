@@ -31,7 +31,7 @@ public class UserController {
     @GetMapping("/api/admin")
     @PreAuthorize("hasRole('ADMIN')")
     public String adminAccess() {
-        return ">>> Admin Contents";
+        return "";
     }
 
     @PostMapping("/api/admin/adduser")

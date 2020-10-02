@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../services/user.service';
+import { user } from '../model/user';
+import { Observable } from "rxjs";
+import { TokenStorageService } from '../auth/token-storage.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-admin',
@@ -9,10 +13,11 @@ import { UserService } from '../services/user.service';
 export class AdminComponent implements OnInit {
   board: string;
   errorMessage: string;
-
-  constructor(private userService: UserService) { }
+  users: Observable<user[]>;
+  constructor(private userService: UserService,private token: TokenStorageService,private router: Router) { }
 
   ngOnInit() {
+    this.reloadData();
     this.userService.getAdminBoard().subscribe(
       data => {
         this.board = data;
@@ -21,5 +26,29 @@ export class AdminComponent implements OnInit {
         this.errorMessage = `${error.status}: ${JSON.parse(error.error).message}`;
       }
     );
+    this.userService.getUsers()
+      .subscribe( data => {
+        this.users = data ;
+      });
+  };
+
+  reloadData() {
+    this.users = this.userService.getUsers();
   }
+
+  deleteUser(id: number) {
+    this.userService.deleteUser(id)
+      .subscribe(
+        data => {
+          console.log(data);
+          this.reloadData();
+        },
+        error => console.log(error));
+  }
+  userDetails(id: number){
+    this.router.navigate(['details', id]);
+  }
+
 }
+
+

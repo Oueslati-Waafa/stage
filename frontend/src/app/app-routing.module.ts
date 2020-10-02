@@ -10,7 +10,7 @@ import { AdminComponent } from './admin/admin.component';
 
 const routes: Routes = [
     {
-        path: 'home',
+        path: 'profile',
         component: HomeComponent
     },
     {
@@ -37,7 +37,8 @@ const routes: Routes = [
         path: '',
         redirectTo: 'home',
         pathMatch: 'full'
-    }
+    },
+    { path: 'users', component: AdminComponent }
 ];
 
 @NgModule({
