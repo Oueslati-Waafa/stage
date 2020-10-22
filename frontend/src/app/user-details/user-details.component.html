@@ -3,14 +3,19 @@
 <hr/>
 <div *ngIf="user">
   <div>
+    <label><b>UserName: </b></label> {{user.username}}
+  </div>
+  <div>
     <label><b>Name: </b></label> {{user.name}}
   </div>
   <div>
     <label><b>Email: </b></label> {{user.email}}
   </div>
+  <label><b>Roles: </b></label> 
+  <p *ngFor="let role of user.roles">{{role.name}}</p>
   <div>
-    <label><b>Role: </b></label> {{user.role}}
-  </div>  
+    <label><b>Password Hash: </b></label> {{user.password}}
+  </div>
 </div>
 
 <br>

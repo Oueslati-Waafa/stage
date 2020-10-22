@@ -34,11 +34,7 @@ public class UserController {
         return "";
     }
 
-    @PostMapping("/api/admin/adduser")
-    @PreAuthorize("hasRole('ADMIN')")
-    public User addUser(@RequestBody User user) {
-        return service.saveUser(user);
-    }
+
 
 
     @GetMapping("api/admin/users")
@@ -48,7 +44,7 @@ public class UserController {
     }
 
     @GetMapping("/api/admin/user/{id}")
-    @PreAuthorize("hasRole('ADMIN') or hasRole('TEACHER')")
+    @PreAuthorize("hasRole('ADMIN') or hasRole('TEACHER') or hasRole('STUDENT') ")
     public User findUserById(@PathVariable int id) {
         return service.getUserById(id);
     }

@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { Roles } from '../model/Roles';
 import { user } from '../model/user';
 import { UserService } from '../services/user.service';
+import { TokenStorageService } from '../auth/token-storage.service';
 
 @Component({
   selector: 'app-user-details',
@@ -12,6 +14,9 @@ export class UserDetailsComponent implements OnInit {
 
   id: number;
   user: user;
+  roles : Roles[]
+ 
+  
 
   constructor(private route: ActivatedRoute,private router: Router,
     private userService: UserService) { }
@@ -20,6 +25,7 @@ export class UserDetailsComponent implements OnInit {
     this.user = new user();
 
     this.id = this.route.snapshot.params['id'];
+    
     
     this.userService.getUserDetails(this.id)
       .subscribe(data => {

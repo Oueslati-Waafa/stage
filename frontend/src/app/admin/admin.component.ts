@@ -4,6 +4,7 @@ import { user } from '../model/user';
 import { Observable } from "rxjs";
 import { TokenStorageService } from '../auth/token-storage.service';
 import { Router } from '@angular/router';
+import { Roles } from '../model/Roles';
 
 @Component({
   selector: 'app-admin',
@@ -14,6 +15,8 @@ export class AdminComponent implements OnInit {
   board: string;
   errorMessage: string;
   users: Observable<user[]>;
+  role : Roles[];
+  
   constructor(private userService: UserService,private token: TokenStorageService,private router: Router) { }
 
   ngOnInit() {
@@ -26,10 +29,7 @@ export class AdminComponent implements OnInit {
         this.errorMessage = `${error.status}: ${JSON.parse(error.error).message}`;
       }
     );
-    this.userService.getUsers()
-      .subscribe( data => {
-        this.users = data ;
-      });
+ 
   };
 
   reloadData() {
@@ -47,6 +47,11 @@ export class AdminComponent implements OnInit {
   }
   userDetails(id: number){
     this.router.navigate(['details', id]);
+  }
+
+  logout() {
+    this.token.signOut();
+    window.location.reload();
   }
 
 }

@@ -15,8 +15,9 @@ import { AdminComponent } from './admin/admin.component';
 import { httpInterceptorProviders } from './auth/auth-interceptor';
 import { TeacherComponent } from './teacher/teacher.component';
 import { StudentComponent } from './student/student.component';
-import { UserAddComponent } from './user-add/user-add.component';
+
 import { UserDetailsComponent } from './user-details/user-details.component';
+import { RegisterTeacherComponent } from './register-teacher/register-teacher.component';
 
 @NgModule({
   declarations: [
@@ -27,8 +28,8 @@ import { UserDetailsComponent } from './user-details/user-details.component';
     AdminComponent,
     TeacherComponent,
     StudentComponent,
-    UserAddComponent,
-    UserDetailsComponent
+    UserDetailsComponent,
+    RegisterTeacherComponent
   ],
   imports: [
     BrowserModule,

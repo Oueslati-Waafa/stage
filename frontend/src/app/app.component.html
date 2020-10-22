@@ -1,10 +1,10 @@
-<nav class="navbar navbar-inverse">
+<nav  class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">TEKUP</a>
     </div>
-    <ul class="nav navbar-nav" routerLinkActive="active">
-      <li class="nav-item"><a class="nav-link" routerLink="profile">Profile</a></li>
+    <ul class="nav navbar-nav d-md-down-none" routerLinkActive="active">
+      <li class="nav-item"><a class="nav-link" routerLink="profile"  *ngIf="authority === 'student' || authority === 'admin' || authority === 'teacher'" >Profile</a></li>
       <li *ngIf="authority === 'student' || authority === 'admin' || authority === 'teacher'" class="nav-item">
         <a class="nav-link" routerLink="student">Student Board</a>
       </li>
@@ -14,6 +14,7 @@
       <li *ngIf="authority === 'teacher' || authority === 'admin'" class="nav-item">
         <a class="nav-link" routerLink="teacher">Teacher Board</a>
       </li>
+     
       <li *ngIf="!authority" class="nav-item">
         <a class="nav-link" routerLink="auth/login">Login</a>
       </li>

@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -13,6 +14,7 @@ export class UserService {
   private usersUrl = 'http://localhost:9920/api/admin/users';
   private userDeleteUrl = 'http://localhost:9920/api/admin/delete';
   private userDetailUrl = 'http://localhost:9920/api/admin/user';
+
  
   
 
@@ -34,10 +36,11 @@ export class UserService {
     return this.http.get(`${this.usersUrl}`);
   }
   getUserDetails (id: number): Observable<any> {
-    return this.http.get(`${this.usersUrl}/${id}`);
+    return this.http.get(`${this.userDetailUrl}/${id}`);
   }
   deleteUser(id: number): Observable<any> {
     return this.http.delete(`${this.userDeleteUrl}/${id}`, { responseType: 'text' });
   }
+ 
 
 }

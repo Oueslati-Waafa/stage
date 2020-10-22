@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { user } from '../model/user';
-import { Observable } from "rxjs";
+import { Observable } from 'rxjs';
 import { TokenStorageService } from '../auth/token-storage.service';
+import { Roles } from '../model/Roles';
+import { user } from '../model/user';
 import { UserService } from '../services/user.service';
 import { Router, ActivatedRoute } from '@angular/router';
+
 
 @Component({
   selector: 'app-home',
@@ -11,19 +13,34 @@ import { Router, ActivatedRoute } from '@angular/router';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  info: any;
+  id: number;
+  user: user;
+  roles : Roles[]
+  info : any;
+
   
-  constructor(private token: TokenStorageService) { }
+  constructor(private route: ActivatedRoute,private router: Router,private token: TokenStorageService,private userService: UserService) { }
 
   ngOnInit() {
-    this.info = {
-      token: this.token.getToken(),
-      username: this.token.getUsername(),
-      authorities: this.token.getAuthorities()
-    };
-    
+
+    this.user = new user();
+
+    this.id = this.route.snapshot.params['id'];
+
+    this.userService.getUserDetails(this.id)
+      .subscribe(data => {
+        console.log(data)
+        this.user = data;
+      }, error => console.log(error));
+
+      this.info = {
+        token: this.token.getToken(),
+        username: this.token.getUsername(),
+        authorities: this.token.getAuthorities()
+      };
+
+     
   }
-  
 
   logout() {
     this.token.signOut();

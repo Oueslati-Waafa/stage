@@ -36,7 +36,7 @@ public class RapportController {
     }
 
 
-    @PutMapping("/rapport/update")
+    @PutMapping("/rapport/update/{id}")
     @PreAuthorize("hasRole('ADMIN') or hasRole('TEACHER') or hasRole('STUDENT')")
     public Rapport updateRapport(@RequestBody Rapport rapport) {
         return rapportService.updateRapport(rapport);

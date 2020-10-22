@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TokenStorageService } from '../auth/token-storage.service';
 import { UserService } from './../services/user.service';
 
 @Component({
@@ -10,7 +11,7 @@ export class StudentComponent implements OnInit {
   board: string;
   errorMessage: string;
 
-  constructor(private studentService: UserService) { }
+  constructor(private studentService: UserService,private token: TokenStorageService) { }
 
   ngOnInit() {
     this.studentService.getUserBoard().subscribe(
@@ -21,5 +22,10 @@ export class StudentComponent implements OnInit {
         this.errorMessage = `${error.status}: ${JSON.parse(error.error).message}`;
       }
     );
+  }
+
+  logout() {
+    this.token.signOut();
+    window.location.reload();
   }
 }

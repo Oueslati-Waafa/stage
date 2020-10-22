@@ -1,27 +1,31 @@
 <h4>Content from Server</h4>
 {{board}}
 {{errorMessage}}
-<button (click)="deleteUser(user.id)" class="btn btn-success">Add Users</button>
-<button (click)="deleteUser(user.id)" class="btn btn-success">Add Users</button>
+<button  class="btn btn-success" style="margin:5px;" routerLink="/addStudent">Add Student</button>
+<button  class="btn btn-success" style="margin:5px;" routerLink="/addTeacher">Add Teacher</button>
+
 <table class="table table-striped">
     <thead>
       <tr>
         <th>Username</th>
         <th>name</th>
         <th>Email</th>
-        <th>Role</th>
+        <th >Role</th>
         <th>Actions</th>
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let user of users">
+      <tr *ngFor="let user of users | async" >
         <td>{{user.username}}</td>
         <td>{{user.name}}</td>
         <td>{{user.email}}</td>
-        <td>{{user.role}}</td>
-        <td><button (click)="deleteUser(user.id)" class="btn btn-danger" style="margin:5px;">Delete</button>
-            <button (click)="userDetails(user.id)" class="btn btn-info" style="margin:5px;">Details</button>
+        <td  >
+        <ul *ngFor="let role of user.roles"><li>{{role.name}}</li></ul>  
+        
         </td>
+        <td><button style="margin:5px;" (click)="deleteUser(user.id)" class="btn btn-danger" style="margin:5px;">Delete</button>
+            <button (click)="userDetails(user.id)" class="btn btn-info" style="margin:5px;">Details</button>
+            
       </tr>
     </tbody>
 </table>
